@@ -1,9 +1,19 @@
+/* ニ○ータイプ風効果音 */
 #include "rp2040_pwm_audio.h"
 #include "nt_se.h"
 
-// PWMオーディオ出力ピン(デフォルト A3)
+// PWMオーディオの出力先を定義
+// デフォルト定義
+// Raspberry Pi Pico A2(G28)
+// Raspberry Pi Pico 以外はA3(G29)
+// 任意のピンを定義するには以下のコメントを外しオーディオ出力先GPIO番号を指定してください
+//#define PIN_BUZZER A0
 #ifndef PIN_BUZZER
+#ifdef ARDUINO_RASPBERRY_PI_PICO
+#define PIN_BUZZER A2
+#else
 #define PIN_BUZZER A3
+#endif
 #endif
 
 // 再生間隔(ms)
