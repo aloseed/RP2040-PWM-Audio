@@ -41,7 +41,7 @@
 // Grove Shield for Pi PicoのI2C0ポート
 #define PIN_SDA 8
 #define PIN_SCL 9
-#elifdef ARDUINO_CYTRON_MAKER_NANO_RP2040
+#elif defined(ARDUINO_CYTRON_MAKER_NANO_RP2040)
 // Cytron Maker Nano RP2040(Qwiic互換ポート(PORT0)使用)
 #define PIN_SDA 0
 #define PIN_SCL 1
