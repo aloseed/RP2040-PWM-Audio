@@ -10,7 +10,7 @@
 // Grove Shield for Pi PicoのI2C0ポート(SDA G8, SCL G9)を使用する場合は以下をコメントを外してください
 //#define GROVE_SHIELD_FOR_PI_PICO
 
-// RP2040-0.42LCD【01Space】は以下をコメントを外してください
+// RP2040-0.42LCD【01Space】は以下のコメントを外してください
 //#define RP2040_0_42LCD
 
 // PWMオーディオの出力先を定義
