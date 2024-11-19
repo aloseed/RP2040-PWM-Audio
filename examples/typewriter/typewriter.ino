@@ -16,12 +16,15 @@
 // PWMオーディオの出力先を定義
 // デフォルト定義
 // Raspberry Pi Pico A2(G28)
-// Raspberry Pi Pico 以外はA3(G29)
+// Seeed XIAO RP2350 D3
+// 上記以外はA3
 // 任意のピンを定義するには以下のコメントを外しオーディオ出力先GPIO番号を指定してください
 //#define PIN_BUZZER A0
 #ifndef PIN_BUZZER
 #ifdef ARDUINO_RASPBERRY_PI_PICO
 #define PIN_BUZZER A2
+#elif ARDUINO_SEEED_XIAO_RP2350
+#define PIN_BUZZER D3
 #else
 #define PIN_BUZZER A3
 #endif
